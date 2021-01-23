@@ -20,13 +20,13 @@ class ContactForm extends Component{
     hendleSubmit = event => {
         event.preventDefault();
     
-       const dataRepeat = this.props.contacts.filter(
+    /*   const dataRepeat = this.props.contacts.filter(
       contact => contact.name === event.target.elements[0].value,
     );
     if (dataRepeat.length) {
       return alert(`${dataRepeat[0].name} is already in contacts`);
     }
-        
+        */
     
         
         this.props.onSubmit(this.state);

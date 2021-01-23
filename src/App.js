@@ -26,6 +26,11 @@ class App extends Component {
       name: data.name,
       number: data.number,
     }
+    if (this.state.contacts.find( item => item.name === data.name)) {
+      alert(`${data.name} is already in contacts`);
+      return;
+    }
+
 
     this.setState((prevState) => {
       return {
