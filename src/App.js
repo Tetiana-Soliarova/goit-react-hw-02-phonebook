@@ -62,7 +62,7 @@ class App extends Component {
         const { filter } = this.state;
     return (
       <div>
-        <h1 className={style.title}>Phonebook</h1>
+        <h1 class={style.title}>Phonebook</h1>
         <ContactForm
           onSubmit={this.addContact}
           contacts={this.state.contacts}
